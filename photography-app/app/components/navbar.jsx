@@ -26,14 +26,14 @@ useEffect(() => {
     return (
         <div
     
-        className='fixed top-0 left-0 w-full z-[10]'>
-            <div className={`max-w-[1240px] m-auto bg-black/95 flex justify-between items-center p-4`}>
+        className='fixed top-0 left-0 w-[100%] z-[10] text-white'>
+            <div className={` w-[100%] m-auto bg-black/95 flex justify-between items-center p-4`}>
                 <Link className='text-3xl font-bold' href={"/"}>Captur</Link>
                 <ul className='hidden md:flex'>
                     <li className='px-4 text-lg'><Link href={"/"}>Home</Link></li>
                     <li className='px-4 text-lg'><Link href={"/#gallery"}>Gallery</Link></li>
-                    <li className='px-4 text-lg'><Link href={"/work"}>Work</Link></li>
-                    <li className='px-4 text-lg'><Link href={"/contact"}>Contact</Link></li>
+                    <li className='px-4 text-lg'><Link href={"/"}>Work</Link></li>
+                    <li className='px-4 text-lg'><Link href={"/"}>Contact</Link></li>
                 </ul>
                 <div onClick={onNavHandler} className='block md:hidden z-[20]'>
                     {
