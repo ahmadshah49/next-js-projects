@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.img{
+    background: url(https://images.unsplash.com/photo-1518739745383-0ef26e9dd7fd?w=1240&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODN8fGNvZmZlZSUyMHNob3B8ZW58MHwwfDB8fHww )no-repeat center right/cover;
+    width: 100%;
+}
+.grad{
+    background: linear-gradient(90deg, rgba(0,0,0,1) 9%, rgba(0,0,0,0.9472163865546218) 36%, rgba(0,0,0,0.7819502801120448) 62%, rgba(245,0,0,0) 100%);
+}
+.font{
+    font-family: Agbalumo;
+}
