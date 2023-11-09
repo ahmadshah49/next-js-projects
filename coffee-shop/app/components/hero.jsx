@@ -1,4 +1,5 @@
 import React from 'react'
+import Btn from './btn'
 
 const Hero = () => {
     return (
@@ -8,7 +9,7 @@ const Hero = () => {
                 <h2 className='font text-xl md:text-2xl'>Coffee - Tea -Food</h2>
                 <h1 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold py-4 uppercase ' >Coffe Shop <br /> Morning</h1>
                 <div className='flex gap-2'>
-                    <button className='px-3 py-2 text-xs sm:text-lg sm:px-4 sm:py-3  font-bold hover:bg-transparent border duration-300 bg-[#BA9270]'>Discover More</button>
+                   <Btn btn="Discover More"/>
                     <button className='px-3 py-2 text-xs sm:text-lg sm:px-4 sm:py-3 font-bold  border hover:bg-[#BA9270] duration-300 '>Product More</button>
 
                 </div>

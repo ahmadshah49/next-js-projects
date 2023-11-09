@@ -2,15 +2,21 @@ import Image from 'next/image'
 import Navbar from './components/navbar'
 import Hero from './components/hero'
 import Cards from './components/cards'
-
+import {MdCoffeeMaker} from 'react-icons/md'
+import {GiForkKnifeSpoon} from 'react-icons/gi'
+import {AiOutlineCoffee} from 'react-icons/ai'
+import About from './about/page'
 export default function Home() {
   return (
  <>
  <Navbar/>
  <Hero/>
- <div>
-  <Cards/>
+ <div id='menu' className='md:flex justify-center items-center  px-2 bg-[#101010]'>
+ <Cards logo={<MdCoffeeMaker className='text-[#BA9270] mb' size={60}/>} title="Coffee Pack" pera="You can't buy happiness, but you can buy coffee, and that's pretty close."/>
+ <Cards logo={<GiForkKnifeSpoon className='text-[#BA9270] mb' size={60}/>} title="Food Menu" pera="You can't buy happiness, but you can buy coffee, and that's pretty close."/>
+ <Cards logo={<AiOutlineCoffee className='text-[#BA9270] mb' size={60}/>} title="Coffee Pack" pera="You can't buy happiness, but you can buy coffee, and that's pretty close."/>
  </div>
+ <About/>
  </>
   )
 }

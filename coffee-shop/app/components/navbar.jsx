@@ -3,15 +3,18 @@ import React from 'react'
 import { useState } from 'react'
 import { AiOutlineSearch, AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import { GiShoppingCart, GiCoffeeBeans } from 'react-icons/gi'
+import {HiMenuAlt3} from 'react-icons/hi'
+import Link from 'next/link'
 const Navbar = () => {
     const [nav, setNav] = useState(false)
     return (
-        <div className='flex justify-between px-4 items-center h-16 bg-[#101010]'>
+        <div className='fixed w-[100%] z-20'>
+        <div className=' flex justify-between px-4 items-center h-16 bg-[#101010]'>
             <h1><GiCoffeeBeans size={50} className='text-[#BA9270]' /></h1>
             <ul className='hidden md:flex gap-4 text-white font-bold text-base uppercase'>
-                <li className='hover:text-[#edd7c3] duration-300 cursor-pointer'>Home</li>
-                <li className='hover:text-[#edd7c3] duration-300 cursor-pointer'>About</li>
-                <li className='hover:text-[#edd7c3] duration-300 cursor-pointer'>menu</li>
+                <li className='hover:text-[#edd7c3] duration-300 cursor-pointer'><Link href={"/"}>home</Link></li>
+                <li className='hover:text-[#edd7c3] duration-300 cursor-pointer'><Link href={"/#About"}>About</Link></li>
+                <li className='hover:text-[#edd7c3] duration-300 cursor-pointer'><Link href={"/#menu"}>menu</Link></li>
                 <li className='hover:text-[#edd7c3] duration-300 cursor-pointer'>Pages</li>
                 <li className='hover:text-[#edd7c3] duration-300 cursor-pointer'>Shop</li>
                 <li className='hover:text-[#edd7c3] duration-300 cursor-pointer'>Blog</li>
@@ -21,7 +24,7 @@ const Navbar = () => {
                 <span className='hidden md:flex bg-[#BA9270] w-8 h-8 rounded-full cursor-pointer  items-center justify-center  '><AiOutlineSearch size={20} /></span>
                 <GiShoppingCart size={20} className='hidden md:block cursor-pointer' />
                 <div onClick={() => setNav(!nav)} className='md:hidden'>
-                    {!nav ? <AiOutlineMenu size={30} /> : <AiOutlineClose size={30} />}
+                    {!nav ? <HiMenuAlt3 size={30} /> : <AiOutlineClose size={30} />}
                 </div>
             </div>
 
@@ -44,6 +47,8 @@ const Navbar = () => {
             </div>
 
         </div>
+        </div>
+
     )
 }
 
