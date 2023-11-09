@@ -12,9 +12,9 @@ const Navbar = () => {
         <div className=' flex justify-between px-4 items-center h-16 bg-[#101010]'>
             <h1><GiCoffeeBeans size={50} className='text-[#BA9270]' /></h1>
             <ul className='hidden md:flex gap-4 text-white font-bold text-base uppercase'>
-                <li className='hover:text-[#edd7c3] duration-300 cursor-pointer'><Link href={"/"}>home</Link></li>
+                <li className='hover:text-[#edd7c3] duration-300 cursor-pointer'><Link href={"/#home"}>home</Link></li>
                 <li className='hover:text-[#edd7c3] duration-300 cursor-pointer'><Link href={"/#About"}>About</Link></li>
-                <li className='hover:text-[#edd7c3] duration-300 cursor-pointer'><Link href={"/#menu"}>menu</Link></li>
+                <li className='hover:text-[#edd7c3] duration-300 cursor-pointer'><Link href={"/#Menu"}>menu</Link></li>
                 <li className='hover:text-[#edd7c3] duration-300 cursor-pointer'>Pages</li>
                 <li className='hover:text-[#edd7c3] duration-300 cursor-pointer'>Shop</li>
                 <li className='hover:text-[#edd7c3] duration-300 cursor-pointer'>Blog</li>
