@@ -7,6 +7,7 @@ import {GiForkKnifeSpoon} from 'react-icons/gi'
 import {AiOutlineCoffee} from 'react-icons/ai'
 import About from './about/page'
 import Menu from './menu/page'
+import Team from './team/page'
 export default function Home() {
   return (
  <main id='home'>
@@ -21,6 +22,7 @@ export default function Home() {
  <div >
  <Menu/>
  </div>
+ <Team/>
  </main>
   )
 }
