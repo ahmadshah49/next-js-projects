@@ -22,7 +22,12 @@ export default function Home() {
  <div >
  <Menu/>
  </div>
- <Team />
+ <div className='px-4 bg-[#101010] grid sm:grid-cols-2 md:grid-cols-3 gap-6 justify-center place-items-center '>
+ <Team title="marcelluss h. " chef="Senior Chef" img="https://images.unsplash.com/photo-1581299894007-aaa50297cf16?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNoZWZ8ZW58MHx8MHx8fDA%3D" />
+ <Team title="marcelluss h. " chef="Senior Chef" img="https://images.unsplash.com/photo-1583394293214-28ded15ee548?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNoZWZ8ZW58MHx8MHx8fDA%3D" />
+ <Team title="marcelluss h. " chef="Senior Chef" img="https://images.unsplash.com/photo-1592498546551-222538011a27?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+ 
+ </div>
  </main>
   )
 }

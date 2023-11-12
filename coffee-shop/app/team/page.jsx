@@ -1,18 +1,15 @@
 import Image from 'next/image'
 import React from 'react'
 
-const Team = () => {
+const Team = (props) => {
     return (
-      <div className='grid gap-4 mb-60'>
-    <div className='card-artical  relative '>
-<img src="https://images.unsplash.com/photo-1581299894007-aaa50297cf16?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNoZWZ8ZW58MHx8MHx8fDA%3D" className='w-[350px] rounded left-0  right-0 '/>
-
-<div className="card-data w-[280px] bg-black text-white rounded absolute bottom-[-20px]  mx-auto">
-    <h1>marcellus h. waddell</h1>
-    <p>Senior cheif</p>
-</div>
-    </div>
+     <div className='flex flex-col justify-center items-center sm:px-8 md:px-0'>
+      <img src={props.img} className='rounded w-[320px] h-[400px] object-cover' alt="" />
+      <div className='bg-black text-white  w-[280px] h-[100px] py-4 text-center -mt-14  rounded' >
+        <h1 className='uppercase text-[1.5rem] font-bold'>{props.title}</h1>
+        <p className='pt-2 text-[#BA9270] font-bold'>{props.chef}</p>
       </div>
+     </div>
 
     )
 }
