@@ -8,7 +8,7 @@ import Link from 'next/link'
 const Navbar = () => {
     const [nav, setNav] = useState(false)
     return (
-        <div className='fixed w-[100%] z-20'>
+        <div className='fixed w-full z-20'>
         <div className=' flex justify-between px-4 items-center h-16 bg-[#101010]'>
             <h1><GiCoffeeBeans size={50} className='text-[#BA9270]' /></h1>
             <ul className='hidden md:flex gap-4 text-white font-bold text-base uppercase'>
@@ -36,13 +36,13 @@ const Navbar = () => {
 
                 </div>
                 <ul className='flex flex-col items-center justify-center h-[100%]  gap-4 text-white font-bold text-base'>
-                    <li className=' duration-300 cursor-pointer h-10 uppercase text-xl bg-[#BA9270]/70  w-[40%] text-center flex justify-center items-center rounded hover:text-black hover:bg-[#edd7c3]'>Home</li>
-                    <li className=' duration-300 cursor-pointer h-10 uppercase text-xl bg-[#BA9270]/70  w-[40%] text-center flex justify-center items-center rounded hover:text-black hover:bg-[#edd7c3]'>About</li>
-                    <li className=' duration-300 cursor-pointer h-10 uppercase text-xl bg-[#BA9270]/70  w-[40%] text-center flex justify-center items-center rounded hover:text-black hover:bg-[#edd7c3]'>menu</li>
-                    <li className=' duration-300 cursor-pointer h-10 uppercase text-xl bg-[#BA9270]/70  w-[40%] text-center flex justify-center items-center rounded hover:text-black hover:bg-[#edd7c3]'>Shop</li>
-                    <li className=' duration-300 cursor-pointer h-10 uppercase text-xl bg-[#BA9270]/70  w-[40%] text-center flex justify-center items-center rounded hover:text-black hover:bg-[#edd7c3]'>Pages</li>
-                    <li className=' duration-300 cursor-pointer h-10 uppercase text-xl bg-[#BA9270]/70  w-[40%] text-center flex justify-center items-center rounded hover:text-black hover:bg-[#edd7c3]'>Blog</li>
-                    <li className=' duration-300 cursor-pointer h-10 uppercase text-xl bg-[#BA9270]/70  w-[40%] text-center flex justify-center items-center rounded hover:text-black hover:bg-[#edd7c3]'>Contact</li>
+                    <li className=' duration-300 cursor-pointer h-10 uppercase text-[1.25em] bg-[#BA9270]/70  w-[40%] text-center flex justify-center items-center rounded hover:text-black hover:bg-[#edd7c3]'>Home</li>
+                    <li className=' duration-300 cursor-pointer h-10 uppercase text-[1.25em] bg-[#BA9270]/70  w-[40%] text-center flex justify-center items-center rounded hover:text-black hover:bg-[#edd7c3]'>About</li>
+                    <li className=' duration-300 cursor-pointer h-10 uppercase text-[1.25em] bg-[#BA9270]/70  w-[40%] text-center flex justify-center items-center rounded hover:text-black hover:bg-[#edd7c3]'>menu</li>
+                    <li className=' duration-300 cursor-pointer h-10 uppercase text-[1.25em] bg-[#BA9270]/70  w-[40%] text-center flex justify-center items-center rounded hover:text-black hover:bg-[#edd7c3]'>Shop</li>
+                    <li className=' duration-300 cursor-pointer h-10 uppercase text-[1.25em] bg-[#BA9270]/70  w-[40%] text-center flex justify-center items-center rounded hover:text-black hover:bg-[#edd7c3]'>Pages</li>
+                    <li className=' duration-300 cursor-pointer h-10 uppercase text-[1.25em] bg-[#BA9270]/70  w-[40%] text-center flex justify-center items-center rounded hover:text-black hover:bg-[#edd7c3]'>Blog</li>
+                    <li className=' duration-300 cursor-pointer h-10 uppercase text-[1.25em] bg-[#BA9270]/70  w-[40%] text-center flex justify-center items-center rounded hover:text-black hover:bg-[#edd7c3]'>Contact</li>
                 </ul>
             </div>
 
