@@ -13,10 +13,10 @@ const Projecs = () => {
                 <img className='h-[200px] md:h-[300px] object-cover w-full md:w-[250px]' src="https://images.unsplash.com/photo-1532498551838-b7a1cfac622e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE2fHxjb2ZmZWUlMjB0b2dldGhlcnxlbnwwfHwwfHx8MA%3D%3D" alt="" />
             </div>
             <div className='p-2 border z-10 flex justify-center items-center w-full md:h-[320px]'>
-                <img className='h-[200px] md:h-[300px] object-cover w-full md:w-[250px]' src="https://images.unsplash.com/photo-1532498551838-b7a1cfac622e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE2fHxjb2ZmZWUlMjB0b2dldGhlcnxlbnwwfHwwfHx8MA%3D%3D" alt="" />
+                <img className='h-[200px] md:h-[300px] object-cover w-full md:w-[250px]' src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTkxfHxjb2ZmZWUlMjB0b2dldGhlcnxlbnwwfHwwfHx8MA%3D%3D" alt="" />
             </div>
             <div className=' p-2 border z-10 flex justify-center items-center w-full md:h-[320px]'>
-                <img className=' h-[200px] md:h-[300px] object-cover w-full md:w-[250px]' src="https://images.unsplash.com/photo-1532498551838-b7a1cfac622e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE2fHxjb2ZmZWUlMjB0b2dldGhlcnxlbnwwfHwwfHx8MA%3D%3D" alt="" />
+                <img className=' h-[200px] md:h-[300px] object-cover w-full md:w-[250px]' src="https://images.unsplash.com/photo-1664341857920-e9703e2803dd?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTg2fHxjb2ZmZWUlMjB0b2dldGhlcnxlbnwwfHwwfHx8MA%3D%38" alt="" />
             </div>
         </div>
     )

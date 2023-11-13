@@ -10,6 +10,7 @@ import Menu from './menu/page'
 import Team from './team/page'
 import Play from './autoplay/page'
 import Projecs from './projecs/page'
+import Testimonial from './testimonial/page'
 export default function Home() {
   return (
  <main id='home'>
@@ -31,6 +32,7 @@ export default function Home() {
  </div>
  <Play/>
  <Projecs/>
+ <Testimonial/>
  </main>
   )
 }
