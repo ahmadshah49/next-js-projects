@@ -23,3 +23,10 @@
     ) no-repeat center center/cover; 
     width: 100%;
 } */
+.filte{
+    filter: invert(100%);
+    transition: all 0.3s ease-in-out;
+}
+.filte:hover{
+    filter: invert(0);
+}
