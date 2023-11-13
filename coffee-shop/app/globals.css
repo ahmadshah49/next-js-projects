@@ -30,3 +30,7 @@
 .filte:hover{
     filter: invert(0);
 }
+.img2{
+    background: url(https://images.unsplash.com/photo-1519498422487-c5d4a8e7f894?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fGNvZmZlZSUyMHRvZ2V0aGVyfGVufDB8fDB8fHww) no-repeat center center/cover;
+    width: 100%;
+}
