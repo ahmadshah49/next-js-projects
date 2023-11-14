@@ -2,7 +2,7 @@ import React from 'react'
 
 const Projecs = () => {
     return (
-        <div className='relative justify-items-center content-center px-6 py-8 gap-4 grid md:grid-cols-4 md:h-[50vh] h-auto  text-white  bg-fixed bg-center bg-cover img2'>
+        <div id='page' className='relative justify-items-center content-center px-6 py-8 gap-4 grid md:grid-cols-4 md:h-[50vh] h-auto  text-white  bg-fixed bg-center bg-cover img2'>
             <div className='grad absolute top-0 left-0 right-0 bottom-0 '></div>
             <div className='px-2 z-10 flex justify-center items-center md:items-start sm:py-6 py-8   flex-col md:py-0 w-full  md:h-[300px] md:w-[250px] '>
                 <h2 className='font text-xl md:text-[1rem] text-[#BA9270]'>Our Projects</h2>

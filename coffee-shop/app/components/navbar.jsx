@@ -15,10 +15,10 @@ const Navbar = () => {
                 <li className='hover:text-[#edd7c3] duration-300 cursor-pointer'><Link href={"/#home"}>home</Link></li>
                 <li className='hover:text-[#edd7c3] duration-300 cursor-pointer'><Link href={"/#About"}>About</Link></li>
                 <li className='hover:text-[#edd7c3] duration-300 cursor-pointer'><Link href={"/#Menu"}>menu</Link></li>
-                <li className='hover:text-[#edd7c3] duration-300 cursor-pointer'>Pages</li>
-                <li className='hover:text-[#edd7c3] duration-300 cursor-pointer'>Shop</li>
-                <li className='hover:text-[#edd7c3] duration-300 cursor-pointer'>Blog</li>
-                <li className='hover:text-[#edd7c3] duration-300 cursor-pointer'>Contact</li>
+                <li className='hover:text-[#edd7c3] duration-300 cursor-pointer'><Link href={"/#page"}>Projects</Link></li>
+                <li className='hover:text-[#edd7c3] duration-300 cursor-pointer'><Link href={"/#team"}>Team</Link></li>
+                <li className='hover:text-[#edd7c3] duration-300 cursor-pointer'><Link href={"/#Testimonial"}>Testimonial</Link></li>
+                <li className='hover:text-[#edd7c3] duration-300 cursor-pointer'><Link href={"/#contact"}>Contact</Link></li>
             </ul>
             <div className=' flex justify-between items-center md:w-16 text-white '>
                 <span className='hidden md:flex bg-[#BA9270] w-8 h-8 rounded-full cursor-pointer  items-center justify-center  '><AiOutlineSearch size={20} /></span>
@@ -35,14 +35,14 @@ const Navbar = () => {
                     <GiShoppingCart size={40} className='text-[#BA9270] cursor-pointer' />
 
                 </div>
-                <ul className='flex flex-col items-center justify-center h-[100%]  gap-4 text-white font-bold text-base'>
-                    <li className=' duration-300 cursor-pointer h-10 uppercase text-[1.25em] bg-[#BA9270]/70  w-[40%] text-center flex justify-center items-center rounded hover:text-black hover:bg-[#edd7c3]'>Home</li>
-                    <li className=' duration-300 cursor-pointer h-10 uppercase text-[1.25em] bg-[#BA9270]/70  w-[40%] text-center flex justify-center items-center rounded hover:text-black hover:bg-[#edd7c3]'>About</li>
-                    <li className=' duration-300 cursor-pointer h-10 uppercase text-[1.25em] bg-[#BA9270]/70  w-[40%] text-center flex justify-center items-center rounded hover:text-black hover:bg-[#edd7c3]'>menu</li>
-                    <li className=' duration-300 cursor-pointer h-10 uppercase text-[1.25em] bg-[#BA9270]/70  w-[40%] text-center flex justify-center items-center rounded hover:text-black hover:bg-[#edd7c3]'>Shop</li>
-                    <li className=' duration-300 cursor-pointer h-10 uppercase text-[1.25em] bg-[#BA9270]/70  w-[40%] text-center flex justify-center items-center rounded hover:text-black hover:bg-[#edd7c3]'>Pages</li>
-                    <li className=' duration-300 cursor-pointer h-10 uppercase text-[1.25em] bg-[#BA9270]/70  w-[40%] text-center flex justify-center items-center rounded hover:text-black hover:bg-[#edd7c3]'>Blog</li>
-                    <li className=' duration-300 cursor-pointer h-10 uppercase text-[1.25em] bg-[#BA9270]/70  w-[40%] text-center flex justify-center items-center rounded hover:text-black hover:bg-[#edd7c3]'>Contact</li>
+                <ul className='flex flex-col items-center mt-16 justify-start h-[100%]  gap-4 text-white font-bold text-base'>
+                    <li className=' duration-300 cursor-pointer h-10 uppercase text-[1.25em]   w-[40%] text-center border-b-2 '>Home</li>
+                    <li className=' duration-300 cursor-pointer h-10 uppercase text-[1.25em]   w-[40%] text-center border-b-2 '>About</li>
+                    <li className=' duration-300 cursor-pointer h-10 uppercase text-[1.25em]   w-[40%] text-center border-b-2 '>menu</li>
+                    <li className=' duration-300 cursor-pointer h-10 uppercase text-[1.25em]   w-[40%] text-center border-b-2 '>Shop</li>
+                    <li className=' duration-300 cursor-pointer h-10 uppercase text-[1.25em]   w-[40%] text-center border-b-2 '>Pages</li>
+                    <li className=' duration-300 cursor-pointer h-10 uppercase text-[1.25em]   w-[40%] text-center border-b-2 '>Blog</li>
+                    <li className=' duration-300 cursor-pointer h-10 uppercase text-[1.25em]   w-[40%] text-center border-b-2 '>Contact</li>
                 </ul>
             </div>
 

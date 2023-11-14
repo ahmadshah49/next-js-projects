@@ -2,7 +2,7 @@ import React from 'react'
 import { BsFillStarFill } from 'react-icons/bs'
 const Testimonial = () => {
     return (
-        <div id="Menu" className='bg-[#101010] px-4 py-16'>
+        <div id="Testimonial" className='bg-[#101010] px-4 py-16'>
             <h1 className='font text-xl text-[#BA9270] text-center '>Our Testimonial</h1>
             <h1 className='py-5 text-white text-4xl uppercase  font-bold text-center'>What a Client Say ?</h1>
            <div className='flex gap-8 flex-col sm:flex-wrap  sm:flex-row justify-center items-center'>
