@@ -27,9 +27,9 @@ const Header2 = () => {
     <div>
 <div className='flex justify-between px-16 py-2 bg-gray-200'>
     {
-        city.map((city)=>{
+        city.map((city,index)=>{
             return(
-                <span className='font-light '>{city.name}</span>
+                <span key={index} className='font-light '>{city.name}</span>
             )
         })
     }
