@@ -29,7 +29,7 @@ const Header2 = () => {
     {
         city.map((city,index)=>{
             return(
-                <span key={index} className='font-light '>{city.name}</span>
+                <span key={city.name} className='font-light '>{city.name}</span>
             )
         })
     }
