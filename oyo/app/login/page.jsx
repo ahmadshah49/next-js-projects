@@ -12,7 +12,7 @@ const Login = () => {
             </div>
             <div className='z-10  pb-4 bg-white  mr-32 text-white  items-center w-[50%]'>
                 <div className='w-full px-10 font-bold py-2 bg-gradient-to-l from-red-500 to-red-400'>Sign up & Get 500Rs OYO Money</div>
-                <h1 className='text-4xl font-bold pl-8 text-black py-4'>Login / Signup</h1>
+                <h1 className='text-4xl font-bold pl-8 text-black py-8'>Login / Signup</h1>
                 <p className='pl-8 py-2 text-black font-bold'>Please enter your phone number to continue </p>
                 <input className='ml-8 pl-4 mt-2 border outline-none text-black border-gray-500 w-96 py-2' type="text" placeholder='Enter Your Name' />
                 <input className='ml-8 pl-4 mt-2 border outline-none text-black border-gray-500 w-96 py-2' type="email" placeholder='Enter Your Email' />
