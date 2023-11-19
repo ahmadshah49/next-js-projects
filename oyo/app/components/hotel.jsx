@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import React from 'react'
+
 import Link from 'next/link'
 
 const Hotel = () => {
@@ -41,7 +41,7 @@ const Hotel = () => {
       </div>
 <div className='py-4'>
 <span className='px-6 py-3 bg-blue-400 rounded-lg'> price :5660 Rs</span>
-<Link href={"/"} className='mx-4 font-bold text-red-500'>See Details</Link>
+<Link href={"/hotels/2"} className='mx-4 font-bold text-red-500'>See Details</Link>
 </div>
       </div>
         </div>

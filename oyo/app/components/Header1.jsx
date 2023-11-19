@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import React from 'react'
+
 import Block from './block'
 import { PiHandbag } from "react-icons/pi";
 import { BsBuildings } from "react-icons/bs";

@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Hotel from '../components/hotel'
 import Header1 from '../components/Header1'
 const Hotels = () => {
