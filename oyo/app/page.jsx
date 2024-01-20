@@ -9,7 +9,7 @@ export default function Home() {
   return (
    <>
    <head>
-    <title>OYO : Pakistan's Best Online Booking Site For Santized Stay.</title>
+    <title>Instagram.</title>
 <link rel="icon" href="/icon.png" />
    </head>
    <Header1/>

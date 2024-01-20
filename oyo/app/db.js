@@ -1,11 +1,11 @@
 import mongoose from 'mongoose'
-const URL=process.env.APIKEY
+const URL="mongodb+srv://ahmadraza:raza12345a+@projects.zpoplwq.mongodb.net/OYO"
 const connectDB = async() => {
 await mongoose.connect(URL ,{
     useNewUrlParser:true,
     useUnifiedTopology:true
 });
-console.log("DB Conneted...");
+
 }
 
 export default connectDB
