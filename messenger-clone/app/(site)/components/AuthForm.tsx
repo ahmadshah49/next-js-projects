@@ -8,6 +8,8 @@ import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
 import AuthSocialButton from "./AuthSocialButton";
 import { BsGithub, BsGoogle } from "react-icons/bs";
 import axios from "axios";
+import toast from "react-hot-toast";
+import { signIn } from "next-auth/react";
 type variant = "LOGIN" | "REGISTER";
 const AuthForm = () => {
   const [variant, setVariant] = useState<variant>("LOGIN");
@@ -33,14 +35,40 @@ const AuthForm = () => {
   const onSubmit: SubmitHandler<FieldValues> = (data) => {
     setLoading(true);
     if (variant === "REGISTER") {
-      axios.post("/api/register",data);
-    } else {
-      //  NextAuth }
+      axios
+        .post("/api/register", data)
+        .catch(() => toast.error("Something Went Wronge!"))
+        .finally(() => setLoading(false));
+    }
+
+    if (variant === "LOGIN") {
+      signIn("credentials", {
+        ...data,
+        redirect: false,
+      })
+        .then((callback) => {
+          if (callback?.error) {
+            toast.error("Invalid Credentails");
+          }
+          if (callback?.ok || !callback?.error) {
+            toast.success("You are loggedin!");
+          }
+        })
+        .finally(() => setLoading(false));
     }
   };
   const socialAction = (action: string) => {
     setLoading(true);
-    // nextauth social sign in
+    signIn(action, { redirect: false })
+      .then((callback) => {
+        if (callback?.error) {
+          toast.error("Something Went Wronge!");
+        }
+        if (toast?.success) {
+          toast.success("You are logged In!");
+        }
+      })
+      .finally(() => setLoading(false));
   };
   return (
     <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
@@ -101,7 +129,7 @@ const AuthForm = () => {
             />
             <AuthSocialButton
               icon={BsGoogle}
-              onClick={() => socialAction("github")}
+              onClick={() => socialAction("google")}
             />
           </div>
           <div className="flex gap-2 justify-center text-sm mt-6 px-6 text-gray-500">
