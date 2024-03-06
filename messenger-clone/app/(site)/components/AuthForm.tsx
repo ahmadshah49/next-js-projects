@@ -2,18 +2,27 @@
 
 import Button from "@/app/components/Button";
 import Input from "@/app/components/input/Input";
-import { emit } from "process";
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
 import AuthSocialButton from "./AuthSocialButton";
 import { BsGithub, BsGoogle } from "react-icons/bs";
 import axios from "axios";
 import toast from "react-hot-toast";
-import { signIn } from "next-auth/react";
+import { signIn, useSession } from "next-auth/react";
+import { useRouter } from "next/navigation";
 type variant = "LOGIN" | "REGISTER";
 const AuthForm = () => {
+  const session = useSession();
+  const router = useRouter();
+
   const [variant, setVariant] = useState<variant>("LOGIN");
   const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    if (session?.status === "authenticated") {
+      router.push("/users");
+    }
+  }, [session?.status, router]);
+
   const toogleVariant = useCallback(() => {
     if (variant === "LOGIN") {
       setVariant("REGISTER");
@@ -37,6 +46,7 @@ const AuthForm = () => {
     if (variant === "REGISTER") {
       axios
         .post("/api/register", data)
+        .then(() => signIn("credentials", data))
         .catch(() => toast.error("Something Went Wronge!"))
         .finally(() => setLoading(false));
     }
@@ -52,6 +62,7 @@ const AuthForm = () => {
           }
           if (callback?.ok || !callback?.error) {
             toast.success("You are loggedin!");
+            router.push("/users");
           }
         })
         .finally(() => setLoading(false));
@@ -107,7 +118,7 @@ const AuthForm = () => {
             items-center
             "
             >
-              <div className="w-full border-t border-gray-300"></div>
+              <div className="w-full border-t border-gray-300" />
             </div>
             <div
               className="
@@ -132,15 +143,15 @@ const AuthForm = () => {
               onClick={() => socialAction("google")}
             />
           </div>
-          <div className="flex gap-2 justify-center text-sm mt-6 px-6 text-gray-500">
-            <div>
-              {variant === "LOGIN"
-                ? "New to Messenger"
-                : "Already have an account"}
-            </div>
-            <div onClick={toogleVariant} className="underline cursor-pointer">
-              {variant === "LOGIN" ? "Create an account" : "Login"}
-            </div>
+        </div>
+        <div className="flex gap-2 justify-center text-sm mt-6 px-2 text-gray-500">
+          <div>
+            {variant === "LOGIN"
+              ? "New to Messenger"
+              : "Already have an account"}
+          </div>
+          <div onClick={toogleVariant} className="underline cursor-pointer">
+            {variant === "LOGIN" ? "Create an account" : "Login"}
           </div>
         </div>
       </div>

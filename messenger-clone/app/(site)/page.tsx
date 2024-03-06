@@ -28,14 +28,14 @@ export default function Home() {
           text-center
           text-3xl
           font-bold
-          tracking-tighter
+          tracking-tight
           text-gray-900
         "
         >
           Sign into your account
         </h2>
       </div>
-      <AuthForm  />
+      <AuthForm />
     </div>
   );
 }
