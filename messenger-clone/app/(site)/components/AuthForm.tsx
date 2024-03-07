@@ -17,6 +17,7 @@ const AuthForm = () => {
 
   const [variant, setVariant] = useState<variant>("LOGIN");
   const [loading, setLoading] = useState(false);
+
   useEffect(() => {
     if (session?.status === "authenticated") {
       router.push("/users");
@@ -61,8 +62,8 @@ const AuthForm = () => {
             toast.error("Invalid Credentails");
           }
           if (callback?.ok || !callback?.error) {
-            toast.success("You are loggedin!");
             router.push("/users");
+            toast.success("You are loggedin!");
           }
         })
         .finally(() => setLoading(false));
@@ -73,10 +74,10 @@ const AuthForm = () => {
     signIn(action, { redirect: false })
       .then((callback) => {
         if (callback?.error) {
-          toast.error("Something Went Wronge!");
+          toast.error("Invalid Credentials");
         }
-        if (toast?.success) {
-          toast.success("You are logged In!");
+        if (callback?.ok && !callback?.error) {
+          toast.success("logged In!");
         }
       })
       .finally(() => setLoading(false));
