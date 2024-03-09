@@ -1,8 +1,9 @@
-import { getSession } from "next-auth/react";
+import getSession from "@/app/actions/getSession";
 import prisma from "@/app/lib/prisma";
 const getCurrentUser = async () => {
   try {
     const session = await getSession();
+
     if (!session?.user?.email) {
       return null;
     }
@@ -12,6 +13,7 @@ const getCurrentUser = async () => {
         email: session.user.email as string,
       },
     });
+
     if (!currentUser) {
       return null;
     }
