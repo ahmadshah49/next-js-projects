@@ -23,11 +23,7 @@ const Avatar: React.FC<AvatarProps> = ({ user }) => {
 
 "
       >
-        <Image
-          alt="Avatar"
-          src={user?.image || "/images/placeholder.jpg"}
-          fill
-        />
+        <Image alt="Avatar" src={"/images/placeholder.jpg"} fill />
       </div>
 
       <span
